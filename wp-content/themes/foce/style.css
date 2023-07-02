@@ -725,24 +725,18 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
-.story article.story__title div.title__flowers {
-  background: url("./assets/images/sunflower_leaves.png");
+.story h2::before {
+  content: url("./assets/images/sunflower_leaves.png");
   position: absolute;
-  width: 463px;
-  height: 342px;
   left: 0;
-  top: 8.8em;
+  top: 1.8em;
   z-index: -1;
 }
-.story article.story__title div.title__flowers .rotate__flower {
+.story h2::after {
+  content: url("./assets/images/Sunflower.png");
   position: absolute;
-  width: 216px;
-  height: 216px;
-  left: 1em;
-  top: 16em;
-  background: url("./assets/images/Sunflower.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  left: 0.7em;
+  top: 6em;
 }
 .story__article {
   display: flex;
@@ -754,22 +748,18 @@ textarea {
   padding-bottom: 2em;
   background-color: #FFF5E9;
 }
-.story__article .story__flowers {
-  background: url("./assets/images/hibiscus_leaves.png");
+.story__article::before {
+  content: url("./assets/images/hibiscus_leaves.png");
   position: absolute;
-  width: 593px;
-  height: 392px;
   left: 50%;
-  top: 11em;
+  top: 8em;
   z-index: -1;
 }
-.story__article .story__flower {
-  background: url("./assets/images/Hibiscus.png");
+.story__article::after {
+  content: url("./assets/images/Hibiscus.png");
   position: absolute;
-  width: 188px;
-  height: 188px;
-  left: calc(35% + 210px);
-  top: -6em;
+  left: calc(50% + 414px);
+  top: 2em;
 }
 .story #characters {
   margin: 6em;
